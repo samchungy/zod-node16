@@ -1,7 +1,13 @@
 Zod Node16 Resolution Bug Reproduction:
 
-1. Run pnpm install
-2. Run pnpm build
+With no `skipLibCheck` enabled you get the following error:
+
+1. Install and Build
+  ```bash
+  pnpm install && pnpm build
+  ```
+
+Results in the following error:
 
 ```bash
 > zod-node16@1.0.0 build /Users/samc/work/zod-node16
